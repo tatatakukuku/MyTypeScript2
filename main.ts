@@ -14,15 +14,11 @@ const dayToEnglish = (dayNum: number): Day => {
 }
 
 const now: Date = new Date();
-console.log(now.toLocaleString());
-console.log(now.getFullYear());
-console.log(now.getMonth() + 1);
-console.log(now.getDate());
-console.log(now.getHours());
-console.log(now.getMinutes());
-console.log(now.getSeconds());
-console.log(now.getMilliseconds());
-console.log(now.getDay());
+const month: number = now.getMonth();
+const date: number = now.getDate();
+const day: number = now.getDay();
+
 
 const dayOfToday: Day = dayToEnglish(now.getDay());
 console.log(dayOfToday.english.toUpperCase());
+console.log(now.getTime());
